@@ -1,4 +1,4 @@
-var tasks = ["buy milk", "eat dinner", "nail javascript"];
+// var tasks = ["buy milk", "eat dinner", "nail javascript"];
 
 var todoList = document.querySelectorAll("ul")[0];
 var todos = document.querySelectorAll("li");
@@ -17,12 +17,16 @@ form.addEventListener("submit", function(event) {
   todoList.appendChild(newItemtoadd);
 });
 
+
+
 for (let i = 0; i < todos.length; i++) {
   todos[i].addEventListener("click", function() {
+      
     if (todos[i].classList.contains("done")) {
       todos[i].classList.remove("done");
     } else {
       todos[i].classList.add("done");
     }
   });
-}
+};
+
